@@ -1,6 +1,10 @@
 import FriendList from './FriendList/FriendList';
 import Profile from './Profile/Profile';
-import userData from './userData.json';
+import userData from '../assets/userData.json';
+import friends from '../assets/friends.json';
+import transactions from '../assets/transactions.json';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+console.log('friends:', friends);
 
 const App = () => {
   return (
@@ -15,9 +19,16 @@ const App = () => {
         stats={userData.stats}
       />
 
-      <FriendList />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
 
 export default App;
+
+// Щоб перетворити цей масив об'єктів у JSON, використовуйте:
+// в javascript
+// const jsonData = JSON.stringify(users, null, 2);
+// console.log(jsonData);
+// де users - назва масиву
