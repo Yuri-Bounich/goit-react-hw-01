@@ -1,5 +1,7 @@
 .cotainer {
+  width: 80%;
   padding-bottom: 20px;
+  margin: 0 auto;
 }
 
 .block {

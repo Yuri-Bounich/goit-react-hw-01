@@ -1,4 +1,5 @@
 import s from './TransactionHistory.module.css';
+import clsx from 'clsx';
 
 const TransactionHistory = ({ items }) => {
   return (
@@ -14,9 +15,9 @@ const TransactionHistory = ({ items }) => {
       <tbody>
         {items.map(item => (
           <tr className={s.tr} key={item.id}>
-            <td className={s.td}>{item.type}</td>
-            <td className={s.td}>{item.amount}</td>
-            <td className={s.td}>{item.currency}</td>
+            <td className={clsx(s.td, s.tdpadding)}>{item.type}</td>
+            <td className={clsx(s.td, s.tdcenter)}>{item.amount}</td>
+            <td className={clsx(s.td, s.tdcenter)}>{item.currency}</td>
           </tr>
         ))}
       </tbody>
