@@ -5,7 +5,6 @@ import friends from '../assets/friends.json';
 import transactions from '../assets/transactions.json';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 import '../index.css';
-console.log('friends:', friends);
 
 const App = () => {
   return (
