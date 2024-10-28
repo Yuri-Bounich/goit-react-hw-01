@@ -10,8 +10,6 @@ console.log('friends:', friends);
 const App = () => {
   return (
     <div>
-      <p>Hello!</p>
-
       <Profile
         name={userData.username}
         tag={userData.tag}
