@@ -5,6 +5,7 @@
   /* min-height: 100vh; */
   border: 2px solid #000000;
   border-radius: 8px;
+  overflow: hidden;
   gap: 20px;
   width: 300px;
   /* display: flex;
@@ -22,6 +23,7 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  background-color: #faf7f7;
 }
 .image {
   margin: 0 auto;
@@ -30,9 +32,19 @@
   border-radius: 50%;
   background-color: black;
 }
-.name {
+/* .name {
   font-size: 24px;
   text-align: center;
+} */
+
+.nikname {
+  font-size: 20px;
+  color: #938787;
+}
+
+.location {
+  font-size: 22px;
+  color: #938787;
 }
 
 .wrapp {
@@ -40,6 +52,7 @@
   flex-direction: row;
   gap: 0;
   width: 100%;
+  background-color: #cecdcd;
 }
 
 .partwrapp {
@@ -49,7 +62,16 @@
   align-items: center;
   gap: 10px;
   height: 30%;
-  border-top: 2px solid #9c9999;
+  border-top: 2px solid #a49c9c;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.value {
+  font-weight: bold;
+}
+
+.borderwrapp {
+  border-right: 2px solid #a49c9c;
+  border-left: 2px solid #a49c9c;
 }

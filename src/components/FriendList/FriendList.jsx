@@ -8,7 +8,9 @@ const FriendList = ({ friends }) => {
           <li className={s.item} key={item.id}>
             <img src={item.avatar} alt="Avatar" width="48" />
             <h2>{item.name}</h2>
-            <p>{item.isOnline ? 'Online' : 'Offline'}</p>
+            <p className={item.isOnline ? s.online : s.offline}>
+              {item.isOnline ? 'Online' : 'Offline'}
+            </p>
           </li>
         ))}
       </ul>

@@ -21,3 +21,11 @@
   align-items: center;
   gap: 5px;
 }
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
